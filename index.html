@@ -78,7 +78,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 <header>
   <div class="wrap">
     <a class="brand" href="#">RuleForge</a>
-    <nav><a href="#how">How it works</a><a href="#results">Results</a><a href="https://github.com/ShivrajRajasekaran/RuleForge">GitHub</a></nav>
+    <nav><a href="#how">How it works</a><a href="#results">Results</a><a href="#roadmap">Roadmap</a><a href="https://github.com/ShivrajRajasekaran/RuleForge">GitHub</a></nav>
   </div>
 </header>
 
@@ -86,12 +86,12 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 <div class="wrap">
   <div class="hero">
     <h1>Business rules, recovered from COBOL.</h1>
-    <p class="lead">RuleForge reads legacy COBOL programs and writes out the business rules inside them as plain-English statements, so teams can modernize mainframe systems without guessing what the old code does.</p>
+    <p class="lead">An open-source AI developer tool for mainframe modernization, with hosted services on the roadmap. RuleForge reads legacy COBOL programs and writes out the business rules inside them as plain-English statements, so teams can modernize without guessing what the old code does.</p>
     <div class="btns">
       <a class="btn primary" href="https://github.com/ShivrajRajasekaran/RuleForge">View on GitHub</a>
       <a class="btn" href="mailto:contact@ruleforge.me">contact@ruleforge.me</a>
     </div>
-    <p class="status">Open source, early-stage, and in active development.</p>
+    <p class="status">Open source, early-stage, and in active development. A hosted version is planned.</p>
 
     <div class="pair" aria-label="Example of a COBOL fragment and the rule RuleForge extracts">
       <div>
@@ -113,7 +113,7 @@ END-IF.</pre>
 <section id="how">
   <div class="wrap">
     <h2>How it works</h2>
-    <p class="sub">The analysis runs on your own machine. Your source code is not sent to an outside service.</p>
+    <p class="sub">Today, the analysis runs on your own machine and your source code is not sent to an outside service.</p>
     <ol class="steps">
       <li><h3>Parse</h3><p>RuleForge reads the COBOL source and splits it into paragraphs and decision logic.</p></li>
       <li><h3>Extract</h3><p>A language model running locally through Ollama turns each block of logic into a candidate rule.</p></li>
@@ -132,6 +132,19 @@ END-IF.</pre>
       <div><dt>90%</dt><dd>precision, recall and F1</dd></div>
     </dl>
     <p class="note">These numbers come from a small evaluation set and will change as the test set grows. The method and code are in the repository.</p>
+  </div>
+</section>
+
+<section id="roadmap">
+  <div class="wrap">
+    <h2>What's next</h2>
+    <p class="sub">RuleForge is a command-line tool today. These are the next steps, in the order we plan to build them.</p>
+    <ol class="steps">
+      <li><h3>Hosted web version</h3><p>Upload COBOL programs in the browser and get the extracted rules back, with no local setup.</p></li>
+      <li><h3>More COBOL coverage</h3><p>Handle more of the dialects and coding styles found in real mainframe systems.</p></li>
+      <li><h3>Rule review workflow</h3><p>Let teams approve, edit and export rules so they can feed modernization work.</p></li>
+    </ol>
+    <p class="note">Follow progress and open issues on <a href="https://github.com/ShivrajRajasekaran/RuleForge">GitHub</a>, or write to <a href="mailto:contact@ruleforge.me">contact@ruleforge.me</a>.</p>
   </div>
 </section>
 </main>
